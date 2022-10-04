@@ -1,66 +1,52 @@
-# How-to-disable-the-clear-button-in-numeric-textbox-in-Xamarin.Forms-UWP
+# How to disable the clear button in numeric textbox in Xamarin Forms
 
-This article explains how to disable the clear button in UWP SfNumericTextBox in Xamarin.Forms
+This repository contains sample for hwo to disable the clear button in the [Syncfusion Xamarin.Forms Numeric TextBox](https://help.syncfusion.com/xamarin/numeric-entry/getting-started) control.
 
-The SfNumericTextBox control is an advanced version of the Entry control that restricts input to numeric values. Its cancel button to clear the entire value in numeric textbox area as shown
+Please refer the KB through this [link](https://www.syncfusion.com/kb/11874/how-to-disable-the-clear-button-in-numeric-textbox-in-xamarin-forms).
 
- ![Output image of NumericTextBox with ClearButton](Outputs/NumericTextBoxWithClearButton.png)
+## Syncfusion controls:
 
-If you want to get rid of this cancel button, you can disable the cancel button using custom renderer and the output will be like this
+This project used the following Syncfusion control(s):
+* [SfNumericTextBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-numeric-entry)
 
- ![Output image of NumericTextBox without ClearButton](Outputs/NumericTextBoxWithoutClearButton.png)
- 
-## Creating the above UI
+## Supported platforms
 
-You can achieve the above UI using the below code snippet
+| Platforms | Supported versions |
+| --------- | ------------------ |
+| Android   | API level 21 and later versions |
+| iOS | iOS 9.0 and later versions |
+| UWP | Windows 10 devices |
 
-[C#]
+## Requirements to run the sample
 
-```
-public class CustomNumericTextBox: SfNumericTextBox
-{
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-}
-```
+Refer to the following link for more details - [System Requirements](https://help.syncfusion.com/xamarin-ios/system-requirements)
 
-[XAML]
+## How to run the sample
 
-```
-<StackLayout>
+1. Clone the sample and open it in Visual Studio.
 
-        <local:CustomNumericTextBox Value="123" />
+   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
+   
+2. Register your license key in the App.xaml.cs file as demonstrated in the following code.
 
-</StackLayout>
-```
+		public App()
+		{
+			//Register Syncfusion license
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+	
+			InitializeComponent();
+	
+			MainPage = new App1.MainPage();
+		}
+		
+	Refer to this [link](https://help.syncfusion.com/xamarin/licensing/overview) for more details.
+	
+3. Clean and build the application.
 
-[CustomNumericTextBoxRenderer_UWP]
+4. Run the application.
 
-```
-class CustomNumericTextBoxRenderer_UWP : SfNumericTextBoxRenderer
-    {
-        protected override void OnElementChanged(ElementChangedEventArgs<SfNumericTextBox> e)
-        {
-            base.OnElementChanged(e);
-            if (Control != null)
-            {
-                Control.ShowClearButton = false;
-            }
+## License
 
-        }
-
-        
-    }
-```    
-
-## See also
-
-[How to customize the colors in Xamarin.Forms SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/colors)
-
-[How to format the numeric value in Xamarin.Forms SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/number-formatting)
-
-[Available interaction in numeric control](https://help.syncfusion.com/xamarin/numeric-entry/events-and-interactivity)
-
-
-
-
-
+Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
