@@ -11,6 +11,6 @@
 
   <ItemGroup>
     <PackageReference Include="Syncfusion.Xamarin.SfNumericTextBox" Version="*" />
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1142" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
   </ItemGroup>
 </Project>
