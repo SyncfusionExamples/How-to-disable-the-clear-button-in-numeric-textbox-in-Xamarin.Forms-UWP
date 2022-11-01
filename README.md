@@ -1,6 +1,6 @@
 # How to disable the clear button in numeric textbox in Xamarin Forms
 
-This repository contains sample for hwo to disable the clear button in the [Syncfusion Xamarin.Forms Numeric TextBox](https://help.syncfusion.com/xamarin/numeric-entry/getting-started) control.
+This repository contains sample to disable the clear button in the [Syncfusion Xamarin.Forms Numeric TextBox](https://help.syncfusion.com/xamarin/numeric-entry/getting-started) control.
 
 Please refer the KB through this [link](https://www.syncfusion.com/kb/11874/how-to-disable-the-clear-button-in-numeric-textbox-in-xamarin-forms).
 
